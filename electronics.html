@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronics - Global Mart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="category-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo-container">
+          <img src="1.png" alt="GlobalMart Logo" class="logo" />
+          <h1 class="brand-name">Global Mart</h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <div class="cart-container">
+          <button id="cart-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              ></path>
+            </svg>
+            <span id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="category-header">
+        <div class="container">
+          <h1>Electronics</h1>
+          <p>Discover the latest gadgets and tech innovations</p>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> > <span>Electronics</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-section">
+        <div class="container">
+          <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c21hcnRwaG9uZXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Smartphone"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Premium Smartphone</h3>
+                <p class="product-price">$899.99</p>
+                <div class="product-actions">
+                  <button class="btn-view-details" data-id="e1" data-description="Latest flagship smartphone with advanced camera system and long battery life.">View Details</button>
+                  <button
+                    class="btn-add-to-cart"
+                    data-id="e1"
+                    data-name="Premium Smartphone"
+                    data-price="899.99"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fHww"
+                alt="Laptop"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Ultrabook Laptop</h3>
+                <p class="product-price">$1299.99</p>
+                <div class="product-actions">
+                  <button class="btn-view-details" data-id="e2" data-description="Ultra-portable ultrabook with powerful CPU and lightweight design for professionals.">View Details</button>
+                  <button
+                    class="btn-add-to-cart"
+                    data-id="e2"
+                    data-name="Ultrabook Laptop"
+                    data-price="1299.99"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D"
+                alt="Headphones"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Wireless Headphones</h3>
+                <p class="product-price">$249.99</p>
+                <div class="product-actions">
+                  <button class="btn-view-details" data-id="e3" data-description="Noise-cancelling wireless headphones delivering rich audio and comfortable fit.">View Details</button>
+                  <button
+                    class="btn-add-to-cart"
+                    data-id="e3"
+                    data-name="Wireless Headphones"
+                    data-price="249.99"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1539683255143-73a6b838b106?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNtYXJ0d2F0Y2h8ZW58MHx8MHx8fDA%3D"
+                alt="Smartwatch"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Smart Watch</h3>
+                <p class="product-price">$199.99</p>
+                <div class="product-actions">
+                  <button class="btn-view-details" data-id="e4" data-description="Smartwatch with health tracking, GPS, and customizable watch faces.">View Details</button>
+                  <button
+                    class="btn-add-to-cart"
+                    data-id="e4"
+                    data-name="Smart Watch"
+                    data-price="199.99"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGFibGV0fGVufDB8fDB8fHww"
+                alt="Tablet"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Tablet</h3>
+                <p class="product-price">$349.99</p>
+                <div class="product-actions">
+                  <button class="btn-view-details" data-id="e5" data-description="Lightweight tablet with high-resolution display and multi-day battery life.">View Details</button>
+                  <button
+                    class="btn-add-to-cart"
+                    data-id="e5"
+                    data-name="Tablet"
+                    data-price="349.99"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FtZXJhfGVufDB8fDB8fHww"
+                alt="Camera"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Digital Camera</h3>
+                <p class="product-price">$799.99</p>
+                <div class="product-actions">
+                  <button class="btn-view-details" data-id="e6" data-description="High-performance digital camera for photography enthusiasts and pros.">View Details</button>
+                  <button
+                    class="btn-add-to-cart"
+                    data-id="e6"
+                    data-name="Digital Camera"
+                    data-price="799.99"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=300&h=300&fit=crop"
+                alt="Speaker"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Bluetooth Speaker</h3>
+                <p class="product-price">$129.99</p>
+                <div class="product-actions">
+                  <button class="btn-view-details" data-id="e7" data-description="Portable Bluetooth speaker with deep bass and waterproof design.">View Details</button>
+                  <button
+                    class="btn-add-to-cart"
+                    data-id="e7"
+                    data-name="Bluetooth Speaker"
+                    data-price="129.99"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1605901309584-818e25960a8f?w=300&h=300&fit=crop"
+                alt="Gaming Console"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Gaming Console</h3>
+                <p class="product-price">$499.99</p>
+                <div class="product-actions">
+                  <button class="btn-view-details" data-id="e8" data-description="Next-gen gaming console with stunning graphics and fast loading times.">View Details</button>
+                  <button
+                    class="btn-add-to-cart"
+                    data-id="e8"
+                    data-name="Gaming Console"
+                    data-price="499.99"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1586210579191-33b45e38fa2c?w=300&h=300&fit=crop"
+                alt="Monitor"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">4K Monitor</h3>
+                <p class="product-price">$349.99</p>
+                <div class="product-actions">
+                  <button class="btn-view-details" data-id="e9" data-description="4K monitor with HDR support and ultra-thin bezels for immersive viewing.">View Details</button>
+                  <button
+                    class="btn-add-to-cart"
+                    data-id="e9"
+                    data-name="4K Monitor"
+                    data-price="349.99"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1507582020474-9a35b7d455d9?w=300&h=300&fit=crop"
+                alt="Drone"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Camera Drone</h3>
+                <p class="product-price">$599.99</p>
+                <div class="product-actions">
+                  <button class="btn-view-details" data-id="e10" data-description="Camera drone with stabilized gimbal and high-resolution aerial footage.">View Details</button>
+                  <button
+                    class="btn-add-to-cart"
+                    data-id="e10"
+                    data-name="Camera Drone"
+                    data-price="599.99"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=300&h=300&fit=crop"
+                alt="Printer"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Wireless Printer</h3>
+                <p class="product-price">$179.99</p>
+                <div class="product-actions">
+                  <button class="btn-view-details" data-id="e11" data-description="Wireless printer with fast duplex printing and mobile connectivity.">View Details</button>
+                  <button
+                    class="btn-add-to-cart"
+                    data-id="e11"
+                    data-name="Wireless Printer"
+                    data-price="179.99"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300&h=300&fit=crop"
+                alt="External Drive"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">External SSD</h3>
+                <p class="product-price">$149.99</p>
+                <div class="product-actions">
+                  <button class="btn-view-details" data-id="e12" data-description="High-speed external SSD with compact design and reliable transfers.">View Details</button>
+                  <button
+                    class="btn-add-to-cart"
+                    data-id="e12"
+                    data-name="External SSD"
+                    data-price="149.99"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=300&h=300&fit=crop"
+                alt="Router"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Mesh WiFi System</h3>
+                <p class="product-price">$299.99</p>
+                <div class="product-actions">
+                  <button class="btn-view-details" data-id="e13" data-description="Whole-home mesh WiFi system for seamless coverage and fast speeds.">View Details</button>
+                  <button
+                    class="btn-add-to-cart"
+                    data-id="e13"
+                    data-name="Mesh WiFi System"
+                    data-price="299.99"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 14 -->
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=300&h=300&fit=crop"
+                alt="Keyboard"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Mechanical Keyboard</h3>
+                <p class="product-price">$129.99</p>
+                <div class="product-actions">
+                  <button class="btn-view-details" data-id="e14" data-description="Mechanical keyboard with tactile switches and customizable RGB lighting.">View Details</button>
+                  <button
+                    class="btn-add-to-cart"
+                    data-id="e14"
+                    data-name="Mechanical Keyboard"
+                    data-price="129.99"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 15 -->
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1558002038-1055907df827?w=300&h=300&fit=crop"
+                alt="Smart Home"
+                class="product-image"
+              />
+              <div class="product-info">
+                <h3 class="product-title">Smart Home Hub</h3>
+                <p class="product-price">$149.99</p>
+                <div class="product-actions">
+                  <button class="btn-view-details" data-id="e15" data-description="Smart home hub to control lights, locks, and compatible smart devices.">View Details</button>
+                  <button
+                    class="btn-add-to-cart"
+                    data-id="e15"
+                    data-name="Smart Home Hub"
+                    data-price="149.99"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <div class="logo-row">
+              <img src="2.png" alt="GlobalMart Logo" class="footer-logo" />
+              <h3 class="brand-name">Global Mart</h3>
+            </div>
+            <p>Your one-stop shop for all things premium and high-quality.</p>
+          </div>
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Deals</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Returns & Refunds</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Stay Connected</h4>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 GlobalMart. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="product-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modal-product-details">
+          <!-- Product details will be loaded here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="category.js"></script>
+  </body>
+</html>
